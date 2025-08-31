@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pmail - Pokoc Mail (Web)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Pmail • Pokoc Mail</h1>
+    <div id="auth" class="card">
+      <h2>Đăng nhập</h2>
+      <input id="login-username" placeholder="Tên đăng nhập" />
+      <input id="login-password" type="password" placeholder="Mật khẩu" />
+      <button onclick="login()">Đăng nhập</button>
+      <div class="hr"></div>
+      <h2>Đăng ký</h2>
+      <input id="register-username" placeholder="Tên đăng nhập mới" />
+      <input id="register-password" type="password" placeholder="Mật khẩu mới" />
+      <button onclick="register()">Đăng ký</button>
+    </div>
+
+    <div id="app" class="card" style="display:none">
+      <div class="topbar">
+        <div>Xin chào, <strong id="me"></strong></div>
+        <button class="ghost" onclick="logout()">Đăng xuất</button>
+      </div>
+
+      <h3>Soạn mail</h3>
+      <input id="to" placeholder="Gửi tới (username)" />
+      <input id="subject" placeholder="Tiêu đề" />
+      <textarea id="body" rows="5" placeholder="Nội dung..."></textarea>
+      <button onclick="sendMail()">Gửi</button>
+
+      <div class="grid">
+        <div>
+          <h3>📥 Hộp thư đến</h3>
+          <ul id="inbox"></ul>
+        </div>
+        <div>
+          <h3>📤 Đã gửi</h3>
+          <ul id="sent"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

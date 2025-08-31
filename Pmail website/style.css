@@ -1,0 +1,14 @@
+*{box-sizing:border-box}
+body{margin:0;background:#0b0f14;color:#e8fff6;font-family:Inter,system-ui,Arial}
+.wrap{max-width:900px;margin:0 auto;padding:24px}
+h1{margin:0 0 16px;font-weight:800;letter-spacing:.3px}
+.card{background:#0f151d;border:1px solid #1b2533;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);margin-bottom:16px}
+input,textarea{width:100%;background:#0b0f14;border:1px solid #203042;color:#d7fff4;border-radius:10px;padding:10px 12px;margin:6px 0;outline:none}
+button{background:#22d3a6;border:none;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+button.ghost{background:#14202c;color:#9adccd;border:1px solid #223345}
+.hr{height:1px;background:#1b2533;margin:14px 0}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+ul{list-style:none;padding:0;margin:0}
+li{padding:10px;border:1px solid #1b2533;border-radius:10px;margin-bottom:8px;background:#0b1118}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
